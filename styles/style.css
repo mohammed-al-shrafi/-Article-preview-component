@@ -75,8 +75,10 @@ p.content {
 }
 
 .avatar_img {
-  width: 15%;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .author__info {
