@@ -44,7 +44,6 @@ a {
   background-color: #fff;
   border-radius: var(--border-raduis);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .card__img {
@@ -132,6 +131,11 @@ a {
   transform: translate(-50%, -50%);
   visibility: hidden;
   z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .socail__media::after {
@@ -156,6 +160,9 @@ a {
 
 .visible {
   visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -70%);
 }
 
 @media (max-width: 600px) {
